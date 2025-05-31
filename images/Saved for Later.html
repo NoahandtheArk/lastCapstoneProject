@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0142)file:///Users/noah/Documents/Personal/Noah%20M/Education%20/Hyperiondev/Bootcamp/Capstone%20Projects/Capstone%20Project%204/Sandbox/saved.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Saved for Later_files/font-awesome.min.css">
+    <title>Saved for Later</title>
+    <link rel="stylesheet" href="./Saved for Later_files/lost.css" type="text/css">
+  </head>
+  <body>
+    <header style="
+        background-color: black;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      ">
+      <nav>
+        <ul style="
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          ">
+          <li>
+            <a href="file:///Users/noah/Documents/Personal/Noah%20M/Education%20/Hyperiondev/Bootcamp/Capstone%20Projects/Capstone%20Project%204/Sandbox/index.html" style="color: white; text-decoration: none; font-size: 18px">Home</a>
+          </li>
+          <li>
+            <a href="file:///Users/noah/Documents/Personal/Noah%20M/Education%20/Hyperiondev/Bootcamp/Capstone%20Projects/Capstone%20Project%204/Sandbox/about.html" style="color: white; text-decoration: none; font-size: 18px">About Us</a>
+          </li>
+          <li>
+            <a href="file:///Users/noah/Documents/Personal/Noah%20M/Education%20/Hyperiondev/Bootcamp/Capstone%20Projects/Capstone%20Project%204/Sandbox/saved.html" style="color: white; text-decoration: none; font-size: 18px">Saved</a>
+          </li>
+          <li>
+            <a href="file:///Users/noah/Documents/Personal/Noah%20M/Education%20/Hyperiondev/Bootcamp/Capstone%20Projects/Capstone%20Project%204/Sandbox/contact.html" style="color: white; text-decoration: none; font-size: 18px">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search episodes...">
+        <button class="search-button">Search</button>
+      </div>
+    </header>
+
+    <main style="
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        color: #121212;
+      ">
+      <h1>Your Saved Items</h1>
+      <div id="saved-items-container"><div class="saved-card" style="border: 1px solid rgb(204, 204, 204); padding: 15px; margin: 10px auto; max-width: 600px; text-align: left;">
+      <h2>The Black Bird</h2>
+      <p><strong>Tag:</strong> Crime Thriller</p>
+      <p>Crime thriller involving a confession from a serial killer.</p>
+      <img src="./Saved for Later_files/Black_Bird.jpg" alt="The Black Bird" style="width:100%;max-height:200px;object-fit:cover;">
+      <button class="remove-btn" onclick="removeItem(&#39;The Black Bird&#39;)">Remove</button>
+    </div></div>
+      <section>
+        <!-- Comment Form Section -->
+        <div id="comment-form">
+          <h2>Leave a Comment</h2>
+          <form id="comment-form">
+            <textarea id="comment-text" rows="4" placeholder="Write your comment here..." style="width: 100%"></textarea>
+            <br>
+            <button type="submit">Submit Comment</button>
+          </form>
+        </div>
+
+        <!-- Display Comments -->
+        <div id="comments-container">
+        </div></section>
+        <section>
+          <h2>Comments</h2>
+          <div id="comments-list"><div class="comment" style="border: 1px solid rgb(204, 204, 204); padding: 10px; margin: 10px 0px; background-color: rgb(249, 249, 249);">
+      <p>testing</p>
+      <p><small>Comment #1</small></p>
+    </div><div class="comment" style="border: 1px solid rgb(204, 204, 204); padding: 10px; margin: 10px 0px; background-color: rgb(249, 249, 249);">
+      <p>test again and again</p>
+      <p><small>Comment #2</small></p>
+    </div><div class="comment" style="border: 1px solid rgb(204, 204, 204); padding: 10px; margin: 10px 0px; background-color: rgb(249, 249, 249);">
+      <p>i am winning</p>
+      <p><small>Comment #3</small></p>
+    </div><div class="comment" style="border: 1px solid rgb(204, 204, 204); padding: 10px; margin: 10px 0px; background-color: rgb(249, 249, 249);">
+      <p>test400</p>
+      <p><small>Comment #4</small></p>
+    </div></div>
+        
+      </section>
+    </main>
+    <script src="./Saved for Later_files/lost.js"></script>
+  
+
+</body></html>

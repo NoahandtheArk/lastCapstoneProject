@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Saved for Later</title>
+    <link rel="stylesheet" href="css/lost.css" type="text/css" />
+  </head>
+  <body>
+    <header
+      style="
+        background-color: black;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      "
+    >
+      <nav>
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          "
+        >
+          <li>
+            <a
+              href="index.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="saved.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >Saved</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search episodes..."
+        />
+        <button class="search-button">Search</button>
+      </div>
+    </header>
+
+    <main
+      style="
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        color: #121212;
+      "
+    >
+      <h1>Your Saved Items</h1>
+      <div id="saved-items-container"></div>
+      <section>
+        <!-- Comment Form Section -->
+        <div id="comment-form">
+          <h2>Leave a Comment</h2>
+          <form id="comment-form">
+            <textarea
+              id="comment-text"
+              rows="4"
+              placeholder="Write your comment here..."
+              style="width: 100%"
+            ></textarea>
+            <br />
+            <button type="submit">Submit Comment</button>
+          </form>
+        </div>
+
+        <!-- Display Comments -->
+        <div id="comments-container">
+        </section>
+        <section>
+          <h2>Comments</h2>
+          <div id="comments-list"></div>
+        </div>
+      </section>
+    </main>
+    <script src="LostJavaScript/lost.js"></script>
+        <!-- Footer Section -->
+        <footer
+        style="
+          text-align: center;
+          padding: 15px;
+          background-color: #222;
+          color: white;
+        "
+      >
+        <p>&copy; 2025 Lost - The Storyteller</p>
+      </footer>
+  </body>
+</html>

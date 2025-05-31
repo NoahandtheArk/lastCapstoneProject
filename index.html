@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Storyteller</title>
+    <link rel="stylesheet" href="css/lost.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body class="index-page">
+    <!-- Header Section -->
+    <header
+      style="
+        background-color: black;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      "
+    >
+      <nav>
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          "
+        >
+          <li>
+            <a
+              href="index.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="saved.html"
+            style="color: white; text-decoration: none; font-size: 18px"
+            >Saved</a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Search episodes..."
+                />
+                <button class="search-button">Search</button>
+              </div>
+    </header>
+
+    <main>
+      <div class="h1">
+        <h1>Welcome to the - The Storyteller</h1>
+      </div>
+      <br>
+
+      <!-- The Mystery Begins Section -->
+      <!-- <section> -->
+      <h2 class="mystery-title">The Mystery Begins with "Lost"</h2>
+      <br>
+      <h2 class="lotto-numbers">4 8 15 16 23 42</h2>
+
+      <section>
+        <p>
+          "Lost" is a thrilling story of survival, mystery, and the unknown. A
+          plane crashes on a deserted island, and the survivors must work
+          together to uncover its secrets.
+        </p>
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img
+              src="images/lost main.jpg"
+              alt="Lost Island Scene"
+              width="50%"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="images/jack, kate and lock.jpg"
+              alt="Jack, Kate, and Locke"
+              width="50%"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="images/lock-hach-discovery.jpg"
+              alt="Locke discovers the hatch"
+              width="50%"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="images/lotto-numbers.jpg"
+              alt="Hurley and the Lotto numbers"
+              width="50%"
+            />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Slideshow Navigation Dots -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <br />
+      </section>
+      <!-- Main Characters Section -->
+
+      
+       <h1> Main Characters</h1>
+      <section id="main-characters-section">
+        <div id="main-characters"class="actor-grid"
+          style="
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+          "
+        >
+          <!-- Actor 1: Jack -->
+          <div class="actor" style="flex: 1 1 200px; text-align: center">
+            <img src="images/jack.webp" alt="Jack" width="200" />
+            <h3>Jack Shephard</h3>
+            <p>
+              Played by Matthew Fox. Jack is a spinal surgeon and the natural
+              leader of the survivors. His leadership skills are often tested as
+              he tries to keep the group alive while grappling with his personal
+              demons.He serves as the antithesis of man of faith John Locke
+            </p>
+          </div>
+
+          <!-- Actor 2: Kate -->
+          <div class="actor" style="flex: 1 1 200px; text-align: center">
+            <img src="images/kate-gun-point.jpg" alt="Kate" width="300" />
+            <h3>Kate Austen</h3>
+            <p>
+              Played by Evangeline Lilly. Kate is a fugitive on the run, and her
+              troubled past catches up with her on the island. She becomes one
+              of the most resourceful and courageous characters, willing to
+              sacrifice for the group.As an adult, Kate killed Wayne, which she confessed to her mother before disappearing.
+            </p>
+          </div>
+
+          <!-- Actor 3: Hugh -->
+          <div class="actor" style="flex: 1 1 200px; text-align: center">
+            <img src="images/hugh.jpeg" alt="Hugh" width="300" />
+            <h3>Hugo "Hurley" Reyes</h3>
+            <p>
+              Played by Jorge Garcia. Hugh Rayes is a supporting
+              character who becomes an important part of the survivor's group
+              due to his contributions to the island's survival efforts. 
+              he takes over as the Island's protector from Jack Shephard then takes Benjamin Linus (Michael Emerson) as his adviser, the same way Jacob (Mark Pellegrino) took Richard Alpert (Nestor Carbonell)
+            </p>
+          </div>
+
+          <!-- Actor 4: Locke -->
+          <div class="actor" style="flex: 1 1 200px; text-align: center">
+            <img src="images/lock.png" alt="Locke" width="300" />
+            <h3>John Locke</h3>
+            <p>
+              Played by Terry O'Quinn. Locke is a former wheelchair-bound man
+              who becomes one of the most important figures on the island. He
+              embraces the island's mysterious forces and believes in its
+              transformative power. He believes in mystical and spiritual explanations for why things happen on the island due to an objective "miracle" happening to him after the crash of Oceanic 815.
+            </p>
+          </div>
+        </div>
+        <button id="toggle-characters" style="margin: 20px; padding: 10px 20px;">
+          <b>Show / Hide Main Characters</b>
+        </button>
+      </section>
+      <section class="upcoming-series-section">
+        <h1>Upcoming TV Series</h1>
+
+        <div class="series-grid">
+          <div class="series-item" id="dope-thief">
+            <h3>Dope Thief</h3>
+            <img
+              src="images/dope1.jpg"
+              alt="Dope Thief Series Image"
+              width="400"
+              class="series-img upcoming-img"
+              style="display:none;"
+            />
+            <p><strong>Genre:</strong> Crime Drama</p>
+            <p>
+              "Dope Thief" follows two friends who rob drug dealers but get caught up in dangerous criminal webs.
+            </p>
+      <!-- Watch Trailer Button -->
+      <a href="https://youtu.be/RePjWY4ESyQ?si=ocHJ5ITiRVm_VuJA" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px;">
+        🎬 Watch Trailer
+      </a>
+          </div>
+
+      
+          <div class="series-item" id="woman-of-the-dead">
+            <h3>Woman of the Dead</h3>
+            <img
+              src="images/woman1.jpeg"
+              alt="Woman of the Dead Series Image"
+              width="400"
+              class="series-img upcoming-img"
+              style="display:none;"
+            />
+            <p><strong>Genre:</strong> Thriller, Mystery</p>
+            <p>
+              After the death of her husband, a woman dives into the dark secrets of her quiet town seeking revenge.
+            </p>
+      <!-- Watch Trailer Button -->
+      <a href="https://youtu.be/8-4FJXjZ3OE?si=ETxCCMg_v_N96Hb_" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px;">
+        🎬 Watch Trailer
+      </a>
+          </div>
+
+          <div class="series-item" id="The Gardener">
+            <h3>The Gardener</h3>
+            <img
+              src="images/gardner.jpg"
+              alt="The Gardener"
+              width="400"
+              class="series-img upcoming-img"
+              style="display:none;"
+            />
+            <p><strong>Genre:</strong> Thriller, Mystery</p>
+            <p>
+              Elmer, an assassin posing as a gardener, is tasked with killing Violeta, a seemingly troubled young woman. The police catch wind of a suspected murder.
+            </p>
+      <!-- Watch Trailer Button -->
+      <a href="https://youtu.be/_fwePT2zths?si=rqAlKxMpXWP_ipYn" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px;">
+        🎬 Watch Trailer
+      </a>
+          </div>
+          <div class="series-item" id="Berlin">
+          <h3>Berlin</h3>
+          <img
+            src="images/berlin.jpg"
+            alt="Berlin"
+            width="400"
+            class="series-img upcoming-img"
+            style="display:none;"
+          />
+          <p><strong>Genre:</strong>Thriller, Mystery</p>
+          <p>
+          Berlin assembles a gang in Paris for an almost impossible heist for 44 million euros' worth of jewels from 34 cities in one night.
+          </p>
+    <!-- Watch Trailer Button -->
+    <a href="https://youtu.be/fpeXTzkoT_k?si=e-02wBYemrUDIAUD" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px;">
+      🎬 Watch Trailer
+    </a>
+        </div>
+        </div>
+
+      </section>
+          <!-- Testimonial Section -->
+    <h1>Testimonial</h1>
+
+      <section class="testimonial-section">
+        <p class="testimonial-text">
+          "Lost is more than just a TV series – it’s an emotional roller coaster that keeps you on the edge of your seat.
+          The plot twists and unforgettable characters make it the best TV show ever created."
+        </p>
+        <p class="testimonial-author">- John Doe, TV Series Enthusiast</p>
+      </section>
+      
+      <h1>Notable Episodes</h1>
+      
+      <section>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+          <tr>
+            <th style="border: 1px solid #ddd; padding: 10px; background-color: #f2f2f2;"><h2>Episode</h2></th>
+            <th style="border: 1px solid #ddd; padding: 10px; background-color: #f2f2f2;"><h2>Watch Now</h2></th>
+            <th style="border: 1px solid #ddd; padding: 10px; background-color: #f2f2f2;"><h2>Like</h2></th>
+          </tr>
+      
+          <!-- Episode 1 -->
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 10px;">Episode 1: The Beginning</td>
+            <td style="border: 1px solid #ddd; padding: 10px;">
+              <a href="https://youtu.be/e8Pm7zj-gsM?si=XZV4yuvENcM21FLb" target="_blank" style="text-decoration: none;">
+              <button style="padding: 5px 10px; background: black; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Watch Now
+              </button>
+            </a>
+            </td>
+            <td style="border: 1px solid #ddd; padding: 10px;">
+              <form class="like-form" onsubmit="likeEpisodes(event, 'Episode 1: The Beginning')">
+                <button type="submit" style="padding: 5px 10px; background: black; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                  👍 Like
+                </button>
+                <span id="like-count-Episode-1-The-Beginning" style="margin-left: 10px;">0 Likes</span>
+              </form>
+            </td>
+          </tr>
+      
+          <!-- Episode 2 -->
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 10px;">Episode 2: The Journey</td>
+            <td style="border: 1px solid #ddd; padding: 10px;">
+              <a href="https://youtu.be/YjJOIHb4vxs?si=NBntdP_EDw65NBRT" target="_blank" style="text-decoration: none;">
+              <button style="padding: 5px 10px; background: black; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Watch Now
+              </button>
+            </a>
+            </td>
+            <td style="border: 1px solid #ddd; padding: 10px;">
+              <form class="like-form" onsubmit="likeEpisodes(event, 'Episode 2: The Journey')">
+                <button type="submit" style="padding: 5px 10px; background:black; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                  👍 Like
+                </button>
+                <span id="like-count-Episode-2-The-Journey" style="margin-left: 10px;">0 Likes</span>
+              </form>
+            </td>
+          </tr>
+      
+          <!-- Episode 3 -->
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 10px;">Episode 3: The Finale</td>
+            <td style="border: 1px solid #ddd; padding: 10px;">
+              <a href="https://youtu.be/c0DAIViTtwQ?si=4QN8WEWthqnbaZxD" target="_blank" style="text-decoration: none;">
+              <button style="padding: 5px 10px; background: black; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Watch Now</button>
+            </td>
+            <td style="border: 1px solid #ddd; padding: 10px;">
+              <form class="like-form" onsubmit="likeEpisodes(event, 'Episode 3: The Finale')">
+                <button type="submit" style="padding: 5px 10px; background: black; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                  👍 Like
+                </button>
+              </a>
+                <span id="like-count-Episode-3-The-Finale" style="margin-left: 10px;">0 Likes</span>
+              </form>
+           
+            </td>
+          </tr>
+        </table>
+      </section>
+      
+    </main>
+    </main>
+
+    <!-- Footer Section -->
+    <footer
+      style="
+        text-align: center;
+        padding: 15px;
+        background-color: #222;
+        color: white;
+      "
+    >
+      <p>&copy; 2025 Lost - The Storyteller</p>
+    </footer>
+    <!-- jQuery and Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="LostJavaScript/lost.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Animation for the upcoming series images when the page loads
+        $(".upcoming-img").each(function (index) {
+          $(this)
+            .delay(500 * index) // Staggered animation (500ms delay between each)
+            .fadeIn(1000) // Fade in smoothly
+            .slideDown(800); // Then slide down a bit
+        });
+      
+        // Chained effect function
+        function animateUpcomingImages() {
+          $(".upcoming-img").each(function (index) {
+            $(this)
+              .delay(400 * index)
+              .fadeOut(500)
+              .fadeIn(1000)
+              .slideUp(500)
+              .slideDown(800);
+          });
+        }
+      
+        // OPTIONAL: automatic trigger the chained animation after a four seconds 
+        setTimeout(animateUpcomingImages, 4000);
+      });
+      $(document).ready(function() {
+        $('#toggle-characters').click(function() {
+          $('#main-characters').slideToggle(800); // Smooth slide effect
+        });
+      });
+    </script>
+  </body>
+</html>

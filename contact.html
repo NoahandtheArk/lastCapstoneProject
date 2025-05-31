@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/lost.css" type="text/css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+
+  </head>
+  <body>
+    <header
+      style="
+        background-color: black;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      "
+    >
+      <nav>
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          "
+        >
+          <li>
+            <a
+              href="index.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="saved.html"
+            style="color: white; text-decoration: none; font-size: 18px"
+            >Saved</a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              style="color: white; text-decoration: none; font-size: 18px"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search episodes..."
+        />
+        <button class="search-button">Search</button>
+      </div>
+    </header>
+
+    <main style="max-width: 600px; margin: 20px auto; text-align: center">
+      <h1>Get In Touch</h1>
+      <section>
+          <p>
+            Email:
+            <a href="mailto:mashanoah@gmail.com" style="color: black">mashanoah@gmail.com</a
+            >
+          </p>
+          <p>
+            Phone:
+            <a href="tel:+27626005102" style="color: black  "
+              >+27 62 600 5102</a
+            >
+          </p>
+          <p>Address: Johannesburg, South Africa</p>
+        </section>      </section>
+      <h1>Contact Form</h1>
+      <section>
+        <div class="contact-container">
+          <form
+          id="contactForm"
+          class="contact-form"
+          action="#"
+          method="post"
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          "
+          onsubmit="handleContactForm(event)"
+        >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+          />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+            style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            required
+            style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+          ></textarea>
+          <button
+            type="submit"
+            style="
+              padding: 10px;
+              background: black;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Send
+          </button>
+          <p id="contactResponse" style="margin-top: 15px; color: black; text-align: center;"></p>
+        </form>
+        
+        </div>
+      </section>
+
+      <section>
+        <h2>Connect with Me</h2>
+        <div style="display: flex; justify-content: center; gap: 15px">
+          <a href="https://www.facebook.com/" target="_blank" style="text-decoration: none"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+          <a href="https://x.com/home" target="_blank" style="text-decoration: none"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+          <a href="https://www.linkedin.com/in/noah-mashaba-888025220" target="_blank" style="text-decoration: none">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          
+          <a href="https://github.com/NoahandtheArk" target="_blank" style="text-decoration: none"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer
+      style="
+        text-align: center;
+        padding: 15px;
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+      "
+    >
+      <p>&copy; 2025 Contact Page</p>
+    </footer>
+  </body>
+  <script src="LostJavaScript/lost.js"></script>
+</html>
